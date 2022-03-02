@@ -5,9 +5,11 @@
     {{ title }}
   </a>
   <span class="spacer"></span>
-  <mat-icon matBadge="1" matBadgeColor="warn" cdkOverlayOrigin (click)="isNotificationsOpen = !isNotificationsOpen" #trigger="cdkOverlayOrigin">notifications</mat-icon>
+  <mat-icon class="item-menu-fast" matBadge="1" matBadgeColor="warn" cdkOverlayOrigin (click)="isNotificationsOpen = !isNotificationsOpen" #trigger="cdkOverlayOrigin">notifications</mat-icon>
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <mat-icon>settings</mat-icon>
+  <a class="item-menu-fast" href="/settings">
+    <mat-icon>settings</mat-icon>
+  </a>
 </mat-toolbar>
 
 <ng-template

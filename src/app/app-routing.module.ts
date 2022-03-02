@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ContactsComponent } from './modules/shared/components/contacts/contacts.component';
 import { DetailComponent } from './modules/shared/components/detail/detail.component';
 import { ListComponent } from './modules/shared/components/list/list.component';
+import { ConfigurationComponent } from './modules/shared/components/configuration/configuration.component';
 
 const routes: Routes = [
   {
@@ -17,6 +18,10 @@ const routes: Routes = [
   {
     path: 'contacts',
     component: ContactsComponent
+  },
+  {
+    path: 'settings',
+    component: ConfigurationComponent
   }
 ];
 
