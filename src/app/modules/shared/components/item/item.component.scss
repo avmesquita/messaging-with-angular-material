@@ -1,0 +1,25 @@
+mat-card {
+    width: 100% !important;
+    background-color: transparent;    
+}
+mat-card-content {
+    margin-left: 55px;    
+}
+
+table { 
+    width: 100%; 
+}
+.contact-photo {
+    width: 10px;
+}
+.contact-name {
+    font-weight: bold;
+}
+.contact-last-message {
+    width: 5px;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}

@@ -1,0 +1,17 @@
+<mat-toolbar>
+    <a mat-fab href="/">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </a>
+</mat-toolbar>
+
+<mat-grid-list cols="1" rowHeight="65px" gutterSize="2px" style="margin-top: 2px;">
+    <mat-grid-tile *ngFor="let kontact of allContacts | async">
+        <mat-card class="mat-elevation-z4 contact-item" >
+            <mat-card-header>
+                <div mat-card-avatar class="example-header-image"></div>
+                <mat-card-title>{{ kontact.name }}</mat-card-title>
+                <mat-card-subtitle>{{ kontact.phone }} ' - ' {{ kontact.email }}</mat-card-subtitle>                
+            </mat-card-header>            
+        </mat-card>        
+    </mat-grid-tile>
+</mat-grid-list>

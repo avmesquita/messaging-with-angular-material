@@ -1,0 +1,28 @@
+<mat-toolbar>
+    <a mat-fab href="/">
+      <mat-icon>arrow_back_ios</mat-icon>
+    </a>
+</mat-toolbar>
+  
+<mat-list>
+    <mat-list-item *ngFor="let msg of contact?.messages">
+        <div class="sentFromMe" *ngIf="msg.sender == 'fromMe'">
+        {{ msg.msg }}
+        </div>
+        <div class="sentToMe" *ngIf="msg.sender == 'toMe'">
+            {{ msg.msg }}
+        </div>    
+    </mat-list-item>
+</mat-list>
+
+<div class="pm-your-message">
+    <form>
+        <mat-form-field class="pm-full-width" appearance="fill">
+            <mat-label>Your Message</mat-label>
+            <input matInput placeholder="Type your message here" value="">
+        </mat-form-field>
+        <button mat-fab class="pm-button" (onClick)="sendMessage()">
+            <mat-icon>send</mat-icon>
+        </button>
+    </form>  
+</div>

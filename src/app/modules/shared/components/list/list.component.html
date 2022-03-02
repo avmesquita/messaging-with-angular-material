@@ -1,0 +1,11 @@
+<mat-grid-list cols="1" rowHeight="100px" gutterSize="1px">
+    <mat-grid-tile *ngFor="let kontact of contacts | async">
+        <app-item [contact]="kontact"></app-item>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<div style="position: fixed; text-align: right; width: 98%; height: 50px; bottom: 50px;margin-right: 50px;">
+    <a mat-fab href="/contacts">
+        <mat-icon>message</mat-icon>
+    </a>        
+</div>

@@ -1,0 +1,28 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary">
+  <a class="item-menu-fast" href="/">
+    <mat-icon>lock</mat-icon>
+    {{ title }}
+  </a>
+  <span class="spacer"></span>
+  <mat-icon matBadge="1" matBadgeColor="warn" cdkOverlayOrigin (click)="isNotificationsOpen = !isNotificationsOpen" #trigger="cdkOverlayOrigin">notifications</mat-icon>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <mat-icon>settings</mat-icon>
+</mat-toolbar>
+
+<ng-template
+cdkConnectedOverlay
+[cdkConnectedOverlayOrigin]="trigger"
+[cdkConnectedOverlayOpen]="isNotificationsOpen"
+>
+<ul class="example-list">
+  <li>Father sent a message</li>
+</ul>
+</ng-template>
+
+<div class="content" role="main">
+  
+  
+</div>
+
+<router-outlet></router-outlet>

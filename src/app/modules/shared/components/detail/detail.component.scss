@@ -1,0 +1,33 @@
+.sentFromMe {
+  text-align: right;
+  width: 100%;
+}
+
+.sentToMe {
+  text-align: left;
+  width: 100%;
+}
+
+.pm-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+}
+  
+.pm-full-width {
+    width: 90%;
+}
+
+.pm-your-message {
+    position: fixed; 
+    width: 100%; 
+    height: 50px; 
+    bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.pm-button {
+    margin-left: 20px;    
+    top: -10px;
+}
